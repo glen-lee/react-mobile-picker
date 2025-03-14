@@ -34,7 +34,7 @@
     "build:examples": "tsc && vite build --config vite.config.examples.ts",
     "lint": "eslint lib examples --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "npm run build"
   },
   "lint-staged": {
     "lib/**/*.{ts,tsx}": [
